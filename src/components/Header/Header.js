@@ -15,9 +15,14 @@ const Header = () =>  (
       </Link>
     </Div1>
     <Div2>
+    <li>
+        <Link href="#experience">
+          <NavLink>Experience</NavLink>
+        </Link>
+      </li> 
       <li>
         <Link href="#projects">
-          <NavLink>Projects</NavLink>
+          <NavLink>Personal Projects</NavLink>
         </Link>
       </li>
       <li>
@@ -29,7 +34,12 @@ const Header = () =>  (
         <Link href="#about">
           <NavLink>About</NavLink>
         </Link>
-      </li>        
+      </li>
+      <li>
+        <Link href="#certifications">
+          <NavLink>Certifications</NavLink>
+        </Link>
+      </li>    
       </Div2>
       <Div3>
         <SocialIcons href="https://github.com/Soujannya16">

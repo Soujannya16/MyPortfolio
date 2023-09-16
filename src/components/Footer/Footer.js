@@ -1,25 +1,50 @@
-import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
-
+import React, { useEffect, useState } from 'react';
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin ,AiFillUpCircle} from 'react-icons/ai';
 import { SocialIcons } from '../Header/HeaderStyles';
 import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
+import Button from '../../styles/GlobalComponents/Button';
 
 const Footer = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+    window.location.replace(window.location.href.split('#')[0]);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', toggleVisibility);
+    return () => {
+      window.removeEventListener('scroll', toggleVisibility);
+    };
+  }, []);
   return (
     <FooterWrapper>
-      <LinkList>
+      <LinkList style={{display:"flex", justifyContent:"space-between"}}>
         <LinkColumn>
           <LinkTitle>Call</LinkTitle>
-          <LinkItem href="tel:314-343-3432">314-343-3432</LinkItem>
+          <LinkItem href="tel:7003621926">7003621926</LinkItem>
         </LinkColumn>
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>
-          <LinkItem href="mailto:contact@jsmastery.com">
-            contact@jsmastery.com
+          <LinkItem href="mailto: soujanyaroy@gmail.com">
+            soujanyaroy@gmail.com
           </LinkItem>
         </LinkColumn>
+        <AiFillUpCircle size="3rem" onClick={scrollToTop} style={{cursor:'pointer',marginTop:'30px'}} />
       </LinkList>
-      <SocialIconsContainer>
+      {/* <SocialIconsContainer>
         <CompanyContainer>
           <Slogan>Innovating one project at a time</Slogan>
         </CompanyContainer>
@@ -34,7 +59,7 @@ const Footer = () => {
             <AiFillInstagram size="3rem" />
           </SocialIcons>
         </SocialContainer>
-      </SocialIconsContainer>
+      </SocialIconsContainer> */}
     </FooterWrapper>
   );
 };

@@ -1,8 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
-
+// import {Me} from '../../../public/images/Me.jpg'
 import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { TimeLineData } from '../../constants/constants';
+import { Img } from '../Projects/ProjectsStyles';
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
@@ -45,9 +46,15 @@ const Timeline = () => {
   return (
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
+      <div style={{display:'flex',justifyContent:'columns'}} >
       <SectionText>
-      The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
+      Dedicated and efficient full stack developer with 1+ years experience in cross platform UI develpment, application layers, presentation layers, and databases.
       </SectionText>
+      <div style={{  width: 150,  height: 150,  borderRadius: '50%',  overflow: "hidden", marginBottom:'70px'}}>
+      <Img src='images/Me.jpg' style={{width:'100%',height:'100%',objectFit:'cover'}}/>
+      </div>
+     
+    </div>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (
