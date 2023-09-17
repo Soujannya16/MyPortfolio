@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin ,AiFillUpCircle} from 'react-icons/ai';
 import { SocialIcons } from '../Header/HeaderStyles';
 import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
-import Button from '../../styles/GlobalComponents/Button';
 
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);

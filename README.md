@@ -1,3 +1,5 @@
 ## Personal Portfolio
 
-![Portfolio Website](https://i.ibb.co/WgPMpts/image.png)
+This is my Personal Portfolio project.
+
+This is a responsive project, developed using Next.js and deployed in Vercel.
