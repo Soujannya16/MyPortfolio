@@ -25,7 +25,7 @@ import { FaCircle } from "react-icons/fa";
 export const Experience = () => {
   return (
     <Section id="experience">
-      <SectionTitle>Professionl Experience</SectionTitle>
+      <SectionTitle>Professional Experience</SectionTitle>
       <GridContainer>
         {experience.map((p, i) => {
           return (
