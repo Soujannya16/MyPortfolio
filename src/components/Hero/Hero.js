@@ -41,7 +41,9 @@ const Hero = () => {
             }}
           >
             <Button onClick={() => openInNewTab()}>Download Resume</Button>
-            <Button onClick={openModal}>Learn More</Button>
+            {window.innerWidth > 1024 && (
+              <Button onClick={openModal}>Learn More</Button>
+            )}
             <KnowMe isOpen={isModalOpen} onClose={closeModal} />
           </div>
         </LeftSection>
