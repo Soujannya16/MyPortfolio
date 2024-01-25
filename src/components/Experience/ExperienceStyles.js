@@ -68,9 +68,12 @@ export const UtilityList = styled.div`
   display: flex;
   justify-content: space-evenly;
   margin: 2.5rem 0;
+  overflow: hidden;
+  flex-wrap: wrap;
 `;
 
 export const ExternalLinks = styled.a`
+  margin-bottom: 0.5rem;
   color: #d4c0c0;
   font-size: 1.6rem;
   padding: 1rem 1.5rem;
@@ -86,8 +89,12 @@ export const TagList = styled.ul`
   display: flex;
   justify-content: space-around;
   padding: 2rem;
+  overflow: hidden;
+  flex-wrap: wrap;
 `;
 export const Tag = styled.li`
   color: #d8bfbf;
   font-size: 1.5rem;
+  flex: 1;
+  margin-bottom: 0.5rem;
 `;
