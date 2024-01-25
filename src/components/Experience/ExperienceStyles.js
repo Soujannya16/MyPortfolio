@@ -95,6 +95,8 @@ export const TagList = styled.ul`
 export const Tag = styled.li`
   color: #d8bfbf;
   font-size: 1.5rem;
-  flex: 1;
-  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 1.2rem;
+  }
 `;
