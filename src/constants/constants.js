@@ -46,38 +46,31 @@ export const projects = [
 export const TimeLineData = [
   {
     year: 2016,
-    text:
-      "Started my journey as a BTech student. Relevant Coursework: Data Structures, Web Development, Software Engineering, Algorithms.  ",
+    text: "Started my journey as a BTech student. Relevant Coursework: Data Structures, Web Development, Software Engineering, Algorithms.  ",
   },
   {
     year: 2018,
-    text:
-      "Internship at IOCL, worked on full stack development of their internal online polling system application using Java",
+    text: "Internship at IOCL, worked on full stack development of their internal online polling system application using Java",
   },
   {
     year: 2019,
-    text:
-      "Internship at South Easter Railways, developed a tool to generate monthly duty roster for Group D staff",
+    text: "Internship at South Easter Railways, developed a tool to generate monthly duty roster for Group D staff",
   },
   {
     year: 2020,
-    text:
-      "Offered 4 jobs, qualified Gate 2020 and went for Masters in Software Engineering from Jadavpur Univsersity",
+    text: "Offered 4 jobs, qualified Gate 2020 and went for Masters in Software Engineering from Jadavpur Univsersity",
   },
   {
     year: 2021,
-    text:
-      "Worked on my Maters Thesis on Partial Image Encryption and published the same. Relevant Coursework: Distributed Sytems, Parallel Processing, System Design",
+    text: "Worked on my Maters Thesis on Partial Image Encryption and published the same. Relevant Coursework: Distributed Sytems, Parallel Processing, System Design",
   },
   {
     year: 2022,
-    text:
-      "Started working from January as Software Developer Intern in Applied Materials for 6 months, worked in Devops and Observability",
+    text: "Started working from January as Software Developer Intern in Applied Materials for 6 months, worked in Devops and Observability",
   },
   {
     year: 2022,
-    text:
-      "Joined PwC in July as a Technology Consultant and working presently as a Front End Developer (on Website, Native Android and iOS platforms)",
+    text: "Joined PwC in July as a Technology Consultant and working presently as a Front End Developer (on Website, Native Android and iOS platforms)",
   },
 ];
 
@@ -85,51 +78,43 @@ export const certificationsData = [
   {
     org: "AWS",
     text: "Certified Developer Associate",
-    url:
-      "https://www.credly.com/badges/7cf802cd-007d-405c-9bfa-4e6fff3e2574/linked_in_profile",
+    url: "https://www.credly.com/badges/7cf802cd-007d-405c-9bfa-4e6fff3e2574/linked_in_profile",
     credential: "J2783PKCYF411MSK",
   },
   {
     org: "Microsoft",
     text: "Certified: Azure AI Fundamentals",
-    url:
-      "https://www.credly.com/badges/8f571f54-b75c-4f9d-935d-9c574799337f?source=linked_in_profile",
+    url: "https://www.credly.com/badges/8f571f54-b75c-4f9d-935d-9c574799337f?source=linked_in_profile",
   },
   {
     org: "Microsoft",
     text: "Certified: Azure Data Fundamentals",
-    url:
-      "https://www.credly.com/badges/05522b34-98d3-49a9-be8f-5a51b3d7177f?source=linked_in_profile",
+    url: "https://www.credly.com/badges/05522b34-98d3-49a9-be8f-5a51b3d7177f?source=linked_in_profile",
   },
   {
     org: "GCP",
     text: "BigQuery Basics for Data Analysts",
-    url:
-      "https://google.qwiklabs.com/public_profiles/f59c56b5-c7b8-4f58-93e9-699e9641d753/badges/1097697",
+    url: "https://google.qwiklabs.com/public_profiles/f59c56b5-c7b8-4f58-93e9-699e9641d753/badges/1097697",
   },
   {
     org: "GCP",
     text: "Create ML Models with BigQuery ML",
-    url:
-      "https://google.qwiklabs.com/public_profiles/f59c56b5-c7b8-4f58-93e9-699e9641d753/badges/1102130",
+    url: "https://google.qwiklabs.com/public_profiles/f59c56b5-c7b8-4f58-93e9-699e9641d753/badges/1102130",
   },
   {
     org: "GCP",
     text: "Create and manage Cloud resources",
-    url:
-      "https://google.qwiklabs.com/public_profiles/f59c56b5-c7b8-4f58-93e9-699e9641d753/badges/1092444",
+    url: "https://google.qwiklabs.com/public_profiles/f59c56b5-c7b8-4f58-93e9-699e9641d753/badges/1092444",
   },
   {
     org: "GCP",
     text: "Insights from Data with BigQuery",
-    url:
-      "https://google.qwiklabs.com/public_profiles/f59c56b5-c7b8-4f58-93e9-699e9641d753/badges/1098390",
+    url: "https://google.qwiklabs.com/public_profiles/f59c56b5-c7b8-4f58-93e9-699e9641d753/badges/1098390",
   },
   {
     org: "GCP",
     text: " ... Other Certificates",
-    url:
-      "https://www.cloudskillsboost.google/public_profiles/f59c56b5-c7b8-4f58-93e9-699e9641d753",
+    url: "https://www.cloudskillsboost.google/public_profiles/f59c56b5-c7b8-4f58-93e9-699e9641d753",
   },
 ];
 
@@ -206,7 +191,7 @@ export const experience = [
         ],
       },
     ],
-    image: "/images/southEastRail.jpg",
+    image: "/images/southEastRail.png",
     tags: ["Java Swing", "Java"],
     role: "Engineer Intern",
     duration: "June 2019 - July 2019",

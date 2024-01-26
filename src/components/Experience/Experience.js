@@ -18,9 +18,10 @@ import {
   TitleContent,
   UtilityList,
   Img,
+  RoleDurationDiv,
 } from "./ExperienceStyles";
 import { SectionDivArrow } from "../SectionDivArrow";
-import { FaCircle } from "react-icons/fa";
+import { FaCircle, FaLine } from "react-icons/fa";
 
 export const Experience = () => {
   return (
@@ -32,29 +33,24 @@ export const Experience = () => {
             <BlogCard key={i}>
               <div
                 style={{
-                  width: 70,
-                  height: 70,
-                  borderRadius: "10%",
+                  width: "100%",
                   overflow: "hidden",
-                  marginBottom: "70px",
+                  marginBottom: "60px",
                   display: "flex",
                   justifyContent: "center",
+                  paddingTop: "0.6rem",
                 }}
               >
                 <Img src={p.image} />
               </div>
               <HeaderThree>{p.title}</HeaderThree>
-              <div
-                style={{
-                  width: "100%",
-                  display: "flex",
-                  justifyContent: "space-evenly",
-                }}
+              <RoleDurationDiv
+                style={{ fontSize: window.screen.width < 500 && "1.3rem" }}
               >
                 {p.role}
-                <FaCircle size="0.1px" />
+                <> , </>
                 {p.duration}
-              </div>
+              </RoleDurationDiv>
               <Hr />
               <CardInfo className="card-info">
                 <ul>
@@ -62,7 +58,7 @@ export const Experience = () => {
                     return (
                       <li key={i}>
                         <h1> {e.project}</h1>
-                        <ul style={{ marginLeft: "2rem" }}>
+                        <ul style={{ marginLeft: "2rem", marginRight: "1rem" }}>
                           {" "}
                           {e.work.map((e, i) => {
                             return (

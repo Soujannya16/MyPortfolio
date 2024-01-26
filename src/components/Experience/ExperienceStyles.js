@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const Img = styled.img`
-  width: 100%;
-  height: 100%;
+  width: 70px;
+  height: 98%;
   object-fit: cover;
+  border-radius: 37px;
 `;
 
 export const GridContainer = styled.section`
@@ -29,6 +30,7 @@ export const HeaderThree = styled.h3`
   font-weight: 500;
   letter-spacing: 2px;
   color: #9cc9e3;
+  margin-bottom: 1rem;
   font-size: ${(props) => (props.title ? "3rem" : "2rem")};
 `;
 
@@ -98,5 +100,15 @@ export const Tag = styled.li`
   padding: 0.5rem;
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 1.2rem;
+  }
+`;
+
+export const RoleDurationDiv = styled.div`
+width: "100%",
+display: "flex",
+justifyContent: "space-around",
+alignItems: "center",
+@media ${(props) => props.theme.breakpoints.sm} {
+  font-size: 1.3rem
   }
 `;
