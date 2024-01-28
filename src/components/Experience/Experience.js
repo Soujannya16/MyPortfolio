@@ -21,7 +21,6 @@ import {
   RoleDurationDiv,
 } from "./ExperienceStyles";
 import { SectionDivArrow } from "../SectionDivArrow";
-import { FaCircle, FaLine } from "react-icons/fa";
 
 export const Experience = () => {
   return (
@@ -35,7 +34,7 @@ export const Experience = () => {
                 style={{
                   width: "100%",
                   overflow: "hidden",
-                  marginBottom: "60px",
+                  marginBottom: "10px",
                   display: "flex",
                   justifyContent: "center",
                   paddingTop: "0.6rem",

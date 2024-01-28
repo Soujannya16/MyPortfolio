@@ -1,7 +1,22 @@
-import React, { useEffect, useState } from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin ,AiFillUpCircle} from 'react-icons/ai';
-import { SocialIcons } from '../Header/HeaderStyles';
-import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
+import React, { useEffect, useState } from "react";
+import {
+  AiFillGithub,
+  AiFillInstagram,
+  AiFillLinkedin,
+  AiFillUpCircle,
+} from "react-icons/ai";
+import { SocialIcons } from "../Header/HeaderStyles";
+import {
+  CompanyContainer,
+  FooterWrapper,
+  LinkColumn,
+  LinkItem,
+  LinkList,
+  LinkTitle,
+  Slogan,
+  SocialContainer,
+  SocialIconsContainer,
+} from "./FooterStyles";
 
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -17,20 +32,20 @@ const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
-    window.location.replace(window.location.href.split('#')[0]);
+    window.location.replace(window.location.href.split("#")[0]);
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', toggleVisibility);
+    window.addEventListener("scroll", toggleVisibility);
     return () => {
-      window.removeEventListener('scroll', toggleVisibility);
+      window.removeEventListener("scroll", toggleVisibility);
     };
   }, []);
   return (
     <FooterWrapper>
-      <LinkList style={{display:"flex", justifyContent:"space-between"}}>
+      <LinkList style={{ display: "flex", justifyContent: "space-between" }}>
         <LinkColumn>
           <LinkTitle>Call</LinkTitle>
           <LinkItem href="tel:7003621926">7003621926</LinkItem>
@@ -41,7 +56,11 @@ const Footer = () => {
             soujanyaroy@gmail.com
           </LinkItem>
         </LinkColumn>
-        <AiFillUpCircle size="3rem" onClick={scrollToTop} style={{cursor:'pointer',marginTop:'30px'}} />
+        <AiFillUpCircle
+          size="3rem"
+          onClick={scrollToTop}
+          style={{ cursor: "pointer", marginTop: "30px" }}
+        />
       </LinkList>
       {/* <SocialIconsContainer>
         <CompanyContainer>

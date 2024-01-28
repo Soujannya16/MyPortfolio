@@ -18,7 +18,7 @@ import { SectionDivArrow } from "../SectionDivArrow";
 const Technologies = () => (
   <Section id="tech">
     <SectionDivArrow divider />
-    <SectionTitle>Technologies</SectionTitle>
+    <SectionTitle style={{ lineHeight: "58px" }}>Technologies</SectionTitle>
     <SectionText>
       I've worked with a range a technologies in the web as well as application
       development world. From Back-end To Design
