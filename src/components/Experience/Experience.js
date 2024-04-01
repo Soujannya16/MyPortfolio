@@ -51,7 +51,7 @@ export const Experience = () => {
                 {p.duration}
               </RoleDurationDiv>
               <Hr />
-              <CardInfo className="card-info">
+              <CardInfo>
                 <ul>
                   {p.description.map((e, i) => {
                     return (
@@ -61,7 +61,12 @@ export const Experience = () => {
                           {" "}
                           {e.work.map((e, i) => {
                             return (
-                              <li key={i} style={{ listStyle: "circle" }}>
+                              <li
+                                key={i}
+                                style={{
+                                  listStyle: "circle",
+                                }}
+                              >
                                 {e}
                               </li>
                             );

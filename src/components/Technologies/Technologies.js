@@ -1,5 +1,5 @@
 import React from "react";
-import { DiFirebase, DiReact, DiZend } from "react-icons/di";
+import { DiFirebase, DiReact, DiZend, DiDatabase } from "react-icons/di";
 import {
   Section,
   SectionDivider,
@@ -23,7 +23,20 @@ const Technologies = () => (
       I've worked with a range a technologies in the web as well as application
       development world. From Back-end To Design
     </SectionText>
-    <List>
+    <List
+      style={
+        window.innerWidth > 1024
+          ? {
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "space-evenly",
+              alignItems: "center",
+              maxWidth: "1000px",
+              margin: "auto",
+            }
+          : {}
+      }
+    >
       <ListItem>
         <picture>
           <DiReact size="3rem" />
@@ -38,18 +51,6 @@ const Technologies = () => (
       </ListItem>
       <ListItem>
         <picture>
-          <DiFirebase size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>Back-End</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            NodeJs, Java Springboot and Databases
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <picture>
           <DiZend size="3rem" />
         </picture>
         <ListContainer>
@@ -57,6 +58,30 @@ const Technologies = () => (
           <ListParagraph>
             Experience with <br />
             tools like Figma, Adobe Xd
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+      <ListItem>
+        <picture>
+          <DiFirebase size="3rem" />
+        </picture>
+        <ListContainer>
+          <ListTitle>Back-End</ListTitle>
+          <ListParagraph>
+            Experience with <br />
+            NodeJs, Java Springboot
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+      <ListItem>
+        <picture>
+          <DiDatabase size="3rem" />
+        </picture>
+        <ListContainer>
+          <ListTitle>Databases</ListTitle>
+          <ListParagraph>
+            Experience with <br />
+            MySQL, MongoDB, Firebase, postgreSQL
           </ListParagraph>
         </ListContainer>
       </ListItem>

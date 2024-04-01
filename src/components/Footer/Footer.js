@@ -30,11 +30,7 @@ const Footer = () => {
   };
 
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-    window.location.replace(window.location.href.split("#")[0]);
+    window.scrollTo(0, 0);
   };
 
   useEffect(() => {
