@@ -13,7 +13,7 @@ const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const pdfUrl =
-    "https://drive.google.com/file/d/1rkxA9b1ueNpwGrbPu9WcHYJ4VpcFhO5g/view?usp=sharing";
+    "https://drive.google.com/file/d/11rlvI8H3J1BfyQIfFH2iaAdKnXw9z6sc/view?usp=sharing";
   const openInNewTab = () => {
     window.open(pdfUrl, "_blank");
   };
