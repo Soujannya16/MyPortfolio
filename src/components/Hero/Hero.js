@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import {
   Section,
@@ -11,9 +11,18 @@ import KnowMe from "./KnowMe";
 
 const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  useEffect(() => {
+    fetch("/api/hello").then(async (res) => {
+      console.log("res", res);
+      if (res.status == 200) {
+        const data = await res.json();
+        console.log("data", data["message"]);
+      }
+    });
+  }, []);
 
   const pdfUrl =
-    "https://drive.google.com/file/d/1rkxA9b1ueNpwGrbPu9WcHYJ4VpcFhO5g/view?usp=sharing";
+    "https://drive.google.com/file/d/11rlvI8H3J1BfyQIfFH2iaAdKnXw9z6sc/view?usp=sharing";
   const openInNewTab = () => {
     window.open(pdfUrl, "_blank");
   };

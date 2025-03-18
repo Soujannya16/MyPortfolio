@@ -13,7 +13,7 @@ import {
 } from "./HeaderStyles";
 
 const Header = () => {
-  console.log(">>>>>>>>", window.innerWidth);
+  // console.log(">>>>>>>>", window.innerWidth);
 
   return (
     <Container style={{ marginBottom: window.innerWidth <= 1024 && -60 }}>
