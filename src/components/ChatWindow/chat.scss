@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+$blue: #2894CD;
+$green: #61AD4A;
+
+$color-text: rgba(255, 255, 255, 0.75) !default;
+$color-text-disabled: rgba(255, 255, 255, 0.5) !default;
+$default-bg-color: #212d4588 !default;
+$main-container-font-size: 1.5rem !default;
+
+$conversation-header-bg-color: $default-bg-color !default;
+$conversation-header-color: $color-text !default;
+$conversation-header-info-color: $color-text !default;
+$message-group-header-padding: 0.5rem;
+
+$message-content-incoming-bg-color: $blue;
+$message-content-outgoing-bg-color: #444;
+$message-list-scroll-wrapper-padding: 1.2em 1.2em 0 0.8em;
+
+$message-list-typing-indicator-bg-color: $default-bg-color !default;
+$message-input-content-editor-wrapper-bg-color: #212d4575;
+$message-input-content-editor-color: $color-text;
+
+$button-send-color: $green;
+
+@import "@chatscope/chat-ui-kit-styles/themes/default/variables";
+
+@import "@chatscope/chat-ui-kit-styles/themes/default/main";
+
+.cs-conversation-header .user-name {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
