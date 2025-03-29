@@ -15,7 +15,7 @@ import "./chat.scss";
 import { logEvent } from "firebase/analytics";
 import { analytics } from "../../firebase";
 
-const avatarUrl = `${process.env.PUBLIC_URL}/images/myavatar.jpg`;
+const avatarUrl = `${process.env.PUBLIC_URL}/images/myAvatar.jpg`;
 
 export const Chat = () => {
   const [messages, setMessages] = useState([]);
