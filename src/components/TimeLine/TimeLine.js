@@ -50,7 +50,7 @@ const Timeline = () => {
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
       <div style={{display:'flex',justifyContent:'columns'}} >
       <SectionText>
-      Dedicated and efficient full stack developer with 1+ years experience in cross platform UI develpment, application layers, presentation layers, and databases.
+      Dedicated and efficient full stack developer with 3+ years experience in cross platform UI develpment, application layers, presentation layers, and databases.
       </SectionText>
       {/* <div style={{  width: 150,  height: 150,  borderRadius: '50%',  overflow: "hidden", marginBottom:'70px'}}>
       <Img src='images/Me.jpg' style={{width:'100%',height:'100%',objectFit:'cover'}}/>
