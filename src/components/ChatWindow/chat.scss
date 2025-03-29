@@ -1,12 +1,12 @@
 @charset "utf-8";
 
-$blue: #2894CD;
-$green: #61AD4A;
+$blue: #084d72;
+$green: #61ad4a;
 
 $color-text: rgba(255, 255, 255, 0.75) !default;
 $color-text-disabled: rgba(255, 255, 255, 0.5) !default;
 $default-bg-color: #212d4588 !default;
-$main-container-font-size: 1.5rem !default;
+$main-container-font-size: 2rem !default;
 
 $conversation-header-bg-color: $default-bg-color !default;
 $conversation-header-color: $color-text !default;
@@ -28,8 +28,7 @@ $button-send-color: $green;
 @import "@chatscope/chat-ui-kit-styles/themes/default/main";
 
 .cs-conversation-header .user-name {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
-

@@ -1,3 +1,6 @@
 {
-  "rewrites": [{ "source": "/api/:path*", "destination": "/api/:path*" }]
+  "framework": "create-react-app",
+  "engines": {
+    "node": "22.x"
+  }
 }
