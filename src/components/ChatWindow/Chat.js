@@ -81,7 +81,8 @@ export const Chat = () => {
         <MainContainer
           style={{
             height: "500px",
-            width: "400px",
+            width:
+              window.innerWidth > 1024 ? "400px" : window.innerWidth / 2 + 100,
             backgroundColor: "transparent",
           }}
         >
@@ -121,6 +122,7 @@ export const Chat = () => {
           src={avatarUrl}
           status={openedOnce ? "available" : "eager"}
           onClick={handleToggle}
+          style={{ cursor: "pointer" }}
         />
       )}
     </div>
