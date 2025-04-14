@@ -72,6 +72,18 @@ export const Experience = () => {
                             );
                           })}
                         </ul>
+                        <UtilityList>
+                          {e.links &&
+                            e.links.map((e, i) => (
+                              <ExternalLinks
+                                key={i}
+                                href={e.href}
+                                target="_blank"
+                              >
+                                {e.title}
+                              </ExternalLinks>
+                            ))}
+                        </UtilityList>
                       </li>
                     );
                   })}
@@ -87,31 +99,6 @@ export const Experience = () => {
                   })}
                 </TagList>
               </div>
-              {p.title === "PwC India" && (
-                <UtilityList>
-                  <ExternalLinks href={p.visit}>Visit Argus Site</ExternalLinks>
-                  <ExternalLinks
-                    href={" https://eurokids.lighthouse-learning.com/"}
-                  >
-                    Visit Homebuddy Site
-                  </ExternalLinks>
-                  <ExternalLinks
-                    href={
-                      "https://play.google.com/store/apps/details?id=com.lighthouse.argus&pcampaignid=web_share"
-                    }
-                  >
-                    Visit Argus App
-                  </ExternalLinks>
-                  <ExternalLinks
-                    href={
-                      "https://play.google.com/store/apps/details?id=com.homebuddyLearning&pcampaignid=web_share"
-                    }
-                  >
-                    Visit Homebuddy App
-                  </ExternalLinks>
-                  {/* <ExternalLinks href={p.source}>Source</ExternalLinks> */}
-                </UtilityList>
-              )}
             </BlogCard>
           );
         })}

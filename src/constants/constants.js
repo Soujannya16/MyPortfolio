@@ -123,6 +123,25 @@ export const experience = [
     title: "PwC India",
     description: [
       {
+        project: "FMEG client",
+        work: [
+          " Led cross-functional teams to engineer a scalable React Native solution, reducing technical debt by 40% through collaborative code reviews and adherence to best practices.",
+          " Drove app performance to a 4.4-star Google Play Store rating (334+ reviews) and 100,000+ downloads through UX optimizations and iterative feature enhancements.",
+          " Accelerated KYC completion for 10,000+ users within 3 months by streamlining form workflows and integrating real-time validation.",
+          " Spearheaded Firebase integration (push notifications, dynamic links, crashlytics), Google Analytics, slashing crash rates by 35% and boosting user retention by 20%.",
+        ],
+        links: [
+          {
+            title: "Visit Playstore",
+            href: "https://play.google.com/store/apps/details?id=com.polycab.expert",
+          },
+          {
+            title: "Visit Appstore",
+            href: "https://apps.apple.com/in/app/polycab-experts-loyalty/id6472480126",
+          },
+        ],
+      },
+      {
         project: "Edutech client",
         work: [
           "Contributing to the design and implementation of multiple React UI components for a feature-rich user experience",
@@ -133,6 +152,24 @@ export const experience = [
           "Participating in debugging, testing, and code optimization efforts.",
           "Implementing performance optimizations to enhance the speed andresponsiveness of web applications.",
           "Demonstrated involvement in the complete software development lifecycle, from gathering client requirements to deploying applications on servers, showcasing a holistic understanding of project management and delivery.",
+        ],
+        links: [
+          {
+            title: "Visit Site 1",
+            href: "https://bhis.lighthouse-learning.com",
+          },
+          {
+            title: " Visit Site 2",
+            href: " https://eurokids.lighthouse-learning.com/",
+          },
+          {
+            title: " Visit App 1",
+            href: "https://play.google.com/store/apps/details?id=com.lighthouse.argus",
+          },
+          {
+            title: " Visit App 2",
+            href: "https://play.google.com/store/apps/details?id=com.homebuddyLearning",
+          },
         ],
       },
       {
@@ -153,7 +190,6 @@ export const experience = [
     ],
     role: "Technology Consultant",
     duration: "July 2022 - Present",
-    visit: "https://bhis.lighthouse-learning.com",
     id: 2,
   },
 

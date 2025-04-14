@@ -69,9 +69,10 @@ export const UtilityList = styled.div`
   padding: 0;
   display: flex;
   justify-content: space-evenly;
-  margin: 2.5rem 0;
+  margin: 2.5rem 1rem;
   overflow: hidden;
   flex-wrap: wrap;
+  gap: 2px;
 `;
 
 export const ExternalLinks = styled.a`
